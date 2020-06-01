@@ -1,0 +1,24 @@
+.show{
+    font-size: 30px;
+    color:black;
+}
+.tab{
+    width: 400px;
+    height: 100px;
+    background-color: indianred;
+    div{
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin-right: 30px;
+    }
+    div:nth-child(1){
+        background-color: khaki;
+    }
+    div:nth-child(2){
+        background-color: aquamarine;
+    }
+    div:nth-child(3){
+        background-color: darkorange;
+    }
+}

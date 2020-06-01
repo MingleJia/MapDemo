@@ -1,0 +1,93 @@
+.box {
+  // width: 1200px;
+  width: 100vw;
+  .top {
+    width: 100vw;
+    height: 5.47vw;
+    background-color: #19b2af;
+    text-align: center;
+    font-size: 2.34vw;
+    line-height: 5.47vw;
+    color: #ffffff;
+    .topLeft {
+      float: left;
+      font-size: 1.46vw;
+      background: url(../../assets/back.png) no-repeat 0% 50%;
+      background-size: 0.99vw 1.82vw;
+      padding-left: 1.7vw;
+      margin-left: 2.5vw;
+    }
+  }
+  .center {
+    width: 67.45vw;
+    height: 17.4vw;
+    background-color: #fffce4;
+    border-radius: 0.73vw;
+    margin: 6.25vw auto 0;
+    overflow: hidden;
+    .title {
+      width: 37.71vw;
+      height: 1.82vw;
+      margin: 2.97vw auto 1.7vw;
+      position: relative;
+      text-align: center;
+      .bar {
+        width: 13.33vw;
+        height: 0.16vw;
+        // background-color: #d5d5d5;
+        background-image: linear-gradient(to right, #d5d5d5, #fff);
+        position: absolute;
+        right: 0px;
+        top: 0.9vw;
+      }
+      .bar2 {
+        left: 0px;
+        background-image: linear-gradient(to right, #fff, #d5d5d5);
+      }
+      .text {
+        color: #333333;
+        font-size: 1.77vw;
+        font-weight: bold;
+        line-height: 1.82vw;
+      }
+    }
+    .info {
+      font-size: 1.46vw;
+      margin: 0.8vw 0 0 0;
+      padding-left: 7.5vw;
+      font-family: SourceHanSansCN-Normal;
+    }
+  }
+  .clock {
+    width: 39.17vw;
+    height: 13.02vw;
+    background-color: #e5f4f3;
+    border-radius: 0.73vw;
+    margin: 4.17vw auto 0;
+    overflow: hidden;
+    .clockTitle {
+      font-size: 1.46vw;
+      color: #333333;
+      margin-top: 1.4vw;
+      // margin-bottom: 1.5vw;
+      text-align: center;
+    }
+    .clockInfo {
+      font-size: 4.17vw;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+      margin-top: 0.6vw;
+      margin-bottom: 0.6vw;
+      span {
+        font-size: 3.08vw;
+        padding: 0 0.5vw;
+      }
+    }
+    .showText{
+      font-size: 1.46vw;
+      color: #333333;
+      text-align: center;
+    }
+  }
+}
