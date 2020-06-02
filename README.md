@@ -11,3 +11,4 @@ npm run build
 
 所含demo：
 1.高德地图sdk的使用 src/MapDemo
+安装npm install --save react-amap

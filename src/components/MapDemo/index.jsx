@@ -4,8 +4,8 @@ import { Map, Marker } from 'react-amap';
 import styles from './index.scss';
 
 // 参考文档
-// https://www.jianshu.com/p/f8a2341edda5
-// 接口文档：https://github.com/ElemeFE/react-amap/blob/next/components/map/index.md
+//高德地图API示例 https://lbs.amap.com/api/javascript-api/example/map/click-to-get-lnglat/
+// react-amap的接口文档：https://github.com/ElemeFE/react-amap/blob/next/components/map/index.md
 // 10009报错：https://blog.csdn.net/m0_37355951/article/details/77775287
 const mapKey = '95ec96754bf60a30b455de751e2e2ac4';
 export default class MapDemo extends Component {
