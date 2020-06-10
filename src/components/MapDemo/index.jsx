@@ -7,6 +7,9 @@ import styles from './index.scss';
 //高德地图API示例 https://lbs.amap.com/api/javascript-api/example/map/click-to-get-lnglat/
 // react-amap的接口文档：https://github.com/ElemeFE/react-amap/blob/next/components/map/index.md
 // 10009报错：https://blog.csdn.net/m0_37355951/article/details/77775287
+
+// 【所实现功能】
+// 搜索定位+点击地图上某点后，名称回显到input框
 const mapKey = '95ec96754bf60a30b455de751e2e2ac4';
 export default class MapDemo extends Component {
     constructor(props) {

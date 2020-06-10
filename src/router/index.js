@@ -47,3 +47,15 @@ export const MapDemo = Loadable({
     loading: Loading,
     timeout: timeout,
 });
+// Context.Provider组件
+export const ColorContext = Loadable({
+    loader: () => import("COMPONENTS/ContextDemo/ColorContext.jsx"),
+    loading: Loading,
+    timeout: timeout,
+});
+// Context.Provider多层嵌套入口 App
+export const App = Loadable({
+    loader: () => import("COMPONENTS/ContextDemo/App.jsx"),
+    loading: Loading,
+    timeout: timeout,
+});

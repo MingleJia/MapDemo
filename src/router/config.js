@@ -33,7 +33,17 @@ export const routerConfig = [
     },
     {
         path:'/mapDemo',
-        component: config.MapDemo,    // JSPang博客练习
+        component: config.MapDemo,    // 高德地图
+        exact: true
+    },
+    {
+        path:'/colorContext',
+        component: config.ColorContext,    // Context.Provider
+        exact: true
+    },
+    {
+        path:'/app',
+        component: config.App,    // Context.Provider多层嵌套
         exact: true
     },
 ]
