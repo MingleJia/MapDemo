@@ -2,7 +2,6 @@ import React from 'react';
 import { User, Messages } from './helper'
 
 const { Provider, Consumer } = React.createContext();
-
 class UserProvider extends React.Component {
     state = {
         user: User,

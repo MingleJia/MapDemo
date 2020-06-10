@@ -1,52 +1,47 @@
-import React from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import {UserConsumer} from './UserContext';
 
-export default class Menu extends React.Component {
-    state = {
-        visible: true
-    }
+const Menu = () => {
+    const [visible, setVisible] = useState(true);
 
-    avatarRef = React.createRef()
+    const avatarRef = useRef();
 
-    componentDidMount() {
-        document.addEventListener('click', this.hideMenu)
-    }
+    useEffect(() => {
+        document.addEventListener('click', hideMenu)
+    }, []);
 
-    componentWillUnmount() {
-        document.removeEventListener('click', this.hideMenu)
-    }
-
-    hideMenu = e => {
-        if (e.target !== this.avatarRef.current) {
-            this.setState({ visible: false })
+    const hideMenu = e => {
+        if (e.target !== avatarRef.current) {
+            setVisible(false)
         }
     }
 
-    toggleMenu = () => {
-        this.setState(state => ({ visible: !state.visible }))
+    const toggleMenu = () => {
+        setVisible(!visible);
     }
 
-    render() {
-        return (
-            <UserConsumer>
-            {
-                ({ user, onLogout }) => {
-                    return(
-                    <div>
-                        <img
-                            src={user && user.avatar}
-                            onClick={this.toggleMenu}
-                            ref={this.avatarRef}
-                        />
-                        {this.state.visible && (
-                            <ul>
-                                <li onClick={onLogout}>退出登录</li>
-                            </ul>
-                        )}
-                    </div>
-                )}
-            }
-        </UserConsumer>
-        )
-    }
+    return (
+        <UserConsumer>
+        {
+            ({ user, onLogout }) => {
+                return(
+                <div>
+                    <img
+                        src={user && user.avatar}
+                        onClick={toggleMenu}
+                        ref={avatarRef}
+                    />
+                    {visible && (
+                        <ul>
+                            <li onClick={onLogout}>退出登录</li>
+                        </ul>
+                    )}
+                </div>
+            )}
+        }
+    </UserConsumer>
+    )
+
 }
+
+export default Menu;
